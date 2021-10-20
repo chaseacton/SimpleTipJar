@@ -11,6 +11,9 @@ import UIKit
 public class TipJarManager {
     private var window: TipJarWindow?
 
+    public init() {
+    }
+    
     public var hasReceivedTips: Bool {
         return !TipPersistenceManager.shared.tips.isEmpty
     }
