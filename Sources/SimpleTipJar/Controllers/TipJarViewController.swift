@@ -112,6 +112,7 @@ public final class TipJarViewController: UIViewController {
     
     // MARK: - Public Functions
     
+    // TODO: doc strings
     public func configure(with model: TipJarViewModel) {
         self.model = model
     }

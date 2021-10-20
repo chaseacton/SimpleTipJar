@@ -7,6 +7,7 @@
 
 import Foundation
 
+// TODO: Rename to TipJarConfiguration
 public struct TipJarViewModel {
     public let products: [String: String]
     public var topText: String?

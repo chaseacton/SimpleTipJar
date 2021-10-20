@@ -15,11 +15,15 @@ class TipButton: UIButton {
         }
     }
 
+    // MARK: Init
+    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         self.updateColor()
     }
 
+    // MARK: Public Functions
+    
     override func tintColorDidChange() {
         self.updateColor()
     }
@@ -29,6 +33,8 @@ class TipButton: UIButton {
         self.adjustCornerRadius()
     }
 
+    // MARK: Private Functions
+    
     private func updateColor() {
         setTitleColor(tintColor, for: .normal)
         setTitleColor(.lightGray, for: .disabled)
